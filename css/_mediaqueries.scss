@@ -1,10 +1,78 @@
+@media screen and (min-width: 331px) {
+    article {
+        span {
+            padding-bottom: 20px;
+            a {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) {
+    header {
+        h1 {
+            font-size: 3.125rem;
+            font-size: 50px;
+            margin-top: 160px;
+        }
+        nav {
+            .left-nav {
+                margin-left: 5%;
+                display: inline-block;
+                margin-top: 25px;
+                float: left;
+                a {
+                    font-size: 1rem;
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+            .right-nav {
+                margin-right: 5%;
+                margin-top: 25px;
+                display: inline-block;
+                float: right;
+                li {
+                    float: left;
+                    margin-left: 30px;
+                    &:last-child {
+                        position: relative;
+                        top: -7px;
+                        margin-left: 10px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 1rem;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 480px) {
     header {
         h1 {
-            max-width: 500px;
             margin: 150px auto 0 auto;
             font-size: 3.75rem;
             font-size: 60px;
+        }
+    }
+    article {
+        span {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 550px) {
+    aside {
+        .inline {
+            margin-left: 5px;
         }
     }
 }
@@ -27,12 +95,15 @@
     }
     aside {
         h4 {
-            margin: -4px 0 10 px15px;
+            margin: -4px 0 10px 15px;
         }
         p {
             &:last-child {
                 margin-left: 15px;
             }
+        }
+        .inline {
+            margin-left: 0;
         }
     }
     .posts {
@@ -99,6 +170,9 @@
         img {
             margin-bottom: 10px;
         }
+        .inline {
+            margin-left: 0;
+        }
     }
     .posts {
         h3 {
@@ -129,6 +203,14 @@
                     color: #fff;
                 }
             }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) {
+    aside {
+        .inline {
+            margin-left: 5px;
         }
     }
 }

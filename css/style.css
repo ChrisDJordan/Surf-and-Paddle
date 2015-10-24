@@ -49,14 +49,14 @@ table {
   border-spacing: 0; }
 
 h1 {
-  font-size: 3.125rem;
-  font-size: 50px;
+  font-size: 2.813rem;
+  font-size: 45px;
   font-family: 'Fjalla One', sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+  max-width: 500px; }
 
 h1, h2, h3 {
-  line-height: 1.2;
-  letter-spacing: .7; }
+  line-height: 1.2; }
 
 h2 {
   font-size: 2.5rem;
@@ -114,7 +114,7 @@ header {
   background-position: center bottom; }
   header h1 {
     text-align: center;
-    margin-top: 160px;
+    margin-top: 120px;
     color: white;
     text-shadow: 2px 2px grey; }
   header p {
@@ -123,8 +123,8 @@ header {
     font-weight: 200;
     text-shadow: 1px 1px grey; }
   header nav .left-nav {
-    margin-left: 5%;
-    display: inline-block;
+    text-align: center;
+    display: block;
     margin-top: 25px; }
     header nav .left-nav a {
       font-size: 1rem;
@@ -132,22 +132,22 @@ header {
       text-decoration: none;
       color: #fff; }
   header nav .right-nav {
-    margin-right: 5%;
     margin-top: 25px;
-    display: inline-block;
-    float: right; }
+    text-align: center;
+    display: block; }
     header nav .right-nav li {
-      float: left;
+      display: inline;
       margin-left: 30px; }
+      header nav .right-nav li:first-child {
+        margin-left: 0; }
       header nav .right-nav li:last-child {
-        margin-left: 10px;
         position: relative;
-        bottom: 5px; }
-    header nav .right-nav a {
-      text-decoration: none;
-      color: white;
-      font-size: 1rem;
-      font-size: 16px; }
+        top: 7px; }
+      header nav .right-nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-size: 16px; }
 
 .container {
   margin: 0 auto;
@@ -178,9 +178,10 @@ article {
     margin-bottom: -14px; }
   article span {
     padding-bottom: 30px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    line-height: 1.6;
+    margin-top: 10px; }
     article span a {
-      margin-left: 5px;
       font-size: 1rem;
       font-size: 16px; }
   article p {
@@ -276,8 +277,7 @@ aside {
     font-size: 1.125rem;
     font-size: 18; }
   aside .inline {
-    display: inline-block;
-    margin-left: 5px; }
+    display: inline-block; }
 
 /*posts------------------------------------------------------------*/
 .posts a {
@@ -354,11 +354,54 @@ footer {
         footer nav ul li:last-child {
           margin-right: 0; }
 
+@media screen and (min-width: 331px) {
+  article span {
+    padding-bottom: 20px; }
+    article span a {
+      margin-left: 5px; } }
+@media screen and (min-width: 400px) {
+  header h1 {
+    font-size: 3.125rem;
+    font-size: 50px;
+    margin-top: 160px; }
+  header nav .left-nav {
+    margin-left: 5%;
+    display: inline-block;
+    margin-top: 25px;
+    float: left; }
+    header nav .left-nav a {
+      font-size: 1rem;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff; }
+  header nav .right-nav {
+    margin-right: 5%;
+    margin-top: 25px;
+    display: inline-block;
+    float: right; }
+    header nav .right-nav li {
+      float: left;
+      margin-left: 30px; }
+      header nav .right-nav li:last-child {
+        position: relative;
+        top: -7px;
+        margin-left: 10px; }
+      header nav .right-nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-size: 16px; } }
 @media screen and (min-width: 480px) {
   header h1 {
-    max-width: 500px;
     margin: 150px auto 0 auto;
-    font-size: 60px; } }
+    font-size: 3.75rem;
+    font-size: 60px; }
+
+  article span {
+    padding-bottom: 30px; } }
+@media screen and (min-width: 550px) {
+  aside .inline {
+    margin-left: 5px; } }
 @media screen and (min-width: 768px) {
   .container {
     width: 80%; }
@@ -369,15 +412,19 @@ footer {
 
   header h1 {
     margin: 110px auto 0 auto;
+    font-size: 5rem;
     font-size: 80px;
     max-width: 600px; }
 
   aside h4 {
-    margin: -4px 0 10 px15px; }
+    margin: -4px 0 10px 15px; }
   aside p:last-child {
     margin-left: 15px; }
+  aside .inline {
+    margin-left: 0; }
 
   .posts h3 {
+    font-size: 2.5rem;
     font-size: 40px; }
   .posts .post_photos {
     width: 50%; } }
@@ -389,10 +436,12 @@ footer {
 
   header h1 {
     color: white;
+    font-size: 5.25rem;
     font-size: 84px;
     margin-top: 140px;
     max-width: 100%; }
   header p {
+    font-size: 1.125rem;
     font-size: 18px; }
   header nav .left-nav a, header nav .right-nav a {
     font-size: 1.125rem;
@@ -419,8 +468,11 @@ footer {
       margin-left: 0; }
     aside img {
       margin-bottom: 10px; }
+    aside .inline {
+      margin-left: 0; }
 
   .posts h3 {
+    font-size: 3.125rem;
     font-size: 50px; }
   .posts .post_photos {
     width: 25%;
@@ -438,9 +490,13 @@ footer {
     margin-top: 10px; }
     footer nav a:hover {
       color: #fff; } }
+@media screen and (min-width: 993px) {
+  aside .inline {
+    margin-left: 5px; } }
 @media screen and (min-width: 1200px) {
   header h1 {
     color: white;
+    font-size: 5.625rem;
     font-size: 90px;
     margin-top: 180px;
     max-width: 100%; } }
@@ -460,4 +516,4 @@ footer {
     width: 30%;
     float: left; } }
 
-
+/*# sourceMappingURL=style.css.map */

@@ -7,15 +7,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700);
 
 h1 {
-    font-size: 3.125rem;
-    font-size: 50px;
+    font-size: 2.813rem;
+    font-size: 45px;
     font-family: 'Fjalla One', sans-serif;
     font-weight: bold;
+    max-width: 500px;
 }
 
 h1, h2, h3 {
     line-height: 1.2;
-    letter-spacing: .7;
 }
 
 h2 {
@@ -84,7 +84,7 @@ header {
     background-position: center bottom;
     h1 {
         text-align: center;
-        margin-top: 160px;
+        margin-top: 120px;
         color: white;
         text-shadow: 2px 2px grey;
     }
@@ -96,8 +96,8 @@ header {
     }
     nav {
         .left-nav {
-            margin-left: 5%;
-            display: inline-block;
+            text-align: center;
+            display: block;
             margin-top: 25px;
             a {
                 font-size: 1rem;
@@ -107,24 +107,25 @@ header {
             }
         }
         .right-nav {
-            margin-right: 5%;
             margin-top: 25px;
-            display: inline-block;
-            float: right;
+            text-align: center;
+            display: block;
             li {
-                float: left;
+                display: inline;
                 margin-left: 30px;
-                &:last-child {
-                    margin-left: 10px;
-                    position: relative;
-                    bottom: 5px;
+                &:first-child {
+                    margin-left: 0;
                 }
-            }
-            a {
-                text-decoration: none;
-                color: white;
-                font-size: 1rem;
-                font-size: 16px;
+                &:last-child {
+                    position: relative;
+                    top: 7px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1rem;
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -168,8 +169,9 @@ article {
     span {
         padding-bottom: 30px;
         padding-top: 10px;
+        line-height: 1.6;
+        margin-top: 10px;
         a {
-            margin-left: 5px;
             font-size: 1rem;
             font-size: 16px;
         }
@@ -295,7 +297,6 @@ aside {
     }
     .inline {
         display: inline-block;
-        margin-left: 5px;
     }
 }
 
