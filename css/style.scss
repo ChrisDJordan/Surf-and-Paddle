@@ -80,11 +80,11 @@ header {
     background: url("../images/musicians-hero.jpg");
     background-size: cover;
     overflow: hidden;
-    min-height: 600px;
+    min-height: 400px;
     background-position: center bottom;
     h1 {
         text-align: center;
-        margin-top: 120px;
+        margin-top: 50px;
         color: white;
         text-shadow: 2px 2px grey;
     }
@@ -100,18 +100,15 @@ header {
             display: block;
             margin-top: 25px;
             a {
-               ;
                 font-size: 18px;
                 text-decoration: none;
                 color: #fff;
-
             }
         }
         .right-nav {
             margin-top: 25px;
             text-align: center;
             display: block;
-                
             li {
                 display: inline;
                 margin-left: 30px;
@@ -125,7 +122,6 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
-                    
                     font-size: 18px;
                 }
             }

@@ -12,9 +12,10 @@
 @media screen and (min-width: 420px) {
     header {
         h1 {
-            font-size: 3.75rem;
+            margin: 100px auto 0 auto;
+            max-width: 500px;
+            font-size: 3.750rem;
             font-size: 60px;
-            margin-top: 160px;
         }
         nav {
             .left-nav {
@@ -41,11 +42,6 @@
 }
 
 @media screen and (min-width: 480px) {
-    header {
-        h1 {
-            margin: 150px auto 0 auto;
-        }
-    }
     article {
         span {
             padding-bottom: 30px;
@@ -70,8 +66,9 @@
         width: 50%;
     }
     header {
+        min-height: 600px;
         h1 {
-            margin: 110px auto 0 auto;
+            margin: 140px auto 0 auto;
             font-size: 5rem;
             font-size: 80px;
             max-width: 600px;
